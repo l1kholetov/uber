@@ -17,6 +17,9 @@ header {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+
   background-color: #212121;
 }
 
@@ -162,4 +165,74 @@ nav {
   border: none;
   border-radius: 4px;
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+}
+
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 64px;
+}
+
+.advantages .advantages_subheader {
+  margin: 0 auto;
+  padding: 6.5px 0;
+  width: 112px;
+  height: 24px;
+
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages .advantages_header {
+  margin: 33px 0 16px 0;
+
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages .advantages_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 161px;
+  padding: 0 13px 0 33px;
+}
+
+.advantages .advantages_img_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 116px;
+  height: 116px;
+
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+.advantages .advantages_content {
+  max-width: 371px;
+}
+
+.advantages .advantages_card_header {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #1eacc7;
+}
+
+.advantages .advantages_card_descr {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #202020;
 }
