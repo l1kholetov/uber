@@ -1,3 +1,6 @@
+$main_blue: #1EACC7
+$main_red: #FF5656
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -179,7 +182,7 @@ nav
     align-items: center
     width: 116px
     height: 116px
-    background-color: #1eacc7
+    background-color: $main_blue
     border-radius: 100%
 
   .advantages_content
@@ -189,7 +192,7 @@ nav
     font-size: 17px
     line-height: 21px
     font-weight: 400
-    color: #1eacc7
+    color: $main_blue
 
   .advantages_card_descr
     margin: 0
@@ -263,3 +266,44 @@ nav
 
       cursor: pointer
 
+.car
+  position: relative
+
+  min-height: 895px
+
+  background-image: image-set(url('../img/car_bg.jpg') 1x, url('../img/car_bg@2x.jpg') 2x)
+
+  &_wrapper
+    min-height: 500px
+    padding-top: 56px
+
+    background-color: #070716
+
+    .label
+      color: #070716
+
+      background-color: #fff
+
+    .title
+      margin-bottom: 0
+
+      color: #fff
+
+    .subtitle
+      color: #fff
+
+  &_img
+    position: absolute
+    top: 231px
+    left: 50%
+
+    transform: translateX(-50%)
+
+  &_descr
+    margin-top: 210px
+
+    font-size: 17px
+    line-height: 24px
+    font-weight: 300
+    color: #222
+    text-align: center
