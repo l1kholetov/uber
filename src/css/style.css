@@ -34,11 +34,11 @@ nav {
   margin: 0;
   list-style: none;
 }
-.menu .menu_item {
+.menu_item {
   padding-right: 28px;
   border-right: 2px dotted #000;
 }
-.menu .menu_link {
+.menu_link {
   font-size: 15px;
   line-height: 1;
   font-weight: 300;
@@ -52,26 +52,26 @@ nav {
   height: 84px;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.subheader .subheader_link {
+.subheader_link {
   display: block;
   max-width: 100%;
   margin-top: 16px;
 }
-.subheader .subheader_official {
+.subheader_official {
   margin-top: 6px;
   font-size: 13px;
   font-weight: 400;
   color: #fff;
   opacity: 0.5;
 }
-.subheader .subheader_call {
+.subheader_call {
   margin-top: 19px;
   font-size: 12px;
   font-weight: 300;
   color: #fff;
   text-align: right;
 }
-.subheader .subheader_phone {
+.subheader_phone {
   display: block;
   margin-top: 8px;
   font-size: 22px;
@@ -81,7 +81,7 @@ nav {
   text-transform: uppercase;
   text-align: right;
 }
-.subheader .subheader_btn {
+.subheader_btn {
   margin-top: 19px;
   width: 172px;
   height: 46px;
@@ -97,6 +97,10 @@ nav {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
 }
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
+}
 
 .promo {
   min-height: 800px;
@@ -104,7 +108,7 @@ nav {
   background: -webkit-image-set(url("../img/uber_bg.jpg") 1x, url("../img/uber_bg@2x.jpg") 2x) center center/cover no-repeat;
   background: image-set(url("../img/uber_bg.jpg") 1x, url("../img/uber_bg@2x.jpg") 2x) center center/cover no-repeat;
 }
-.promo .promo_header {
+.promo_header {
   margin: 0;
   font-size: 60px;
   line-height: 1;
@@ -113,7 +117,7 @@ nav {
   text-transform: uppercase;
   text-align: center;
 }
-.promo .promo_subheader {
+.promo_subheader {
   margin: 0;
   margin-top: 22px;
   font-size: 36px;
@@ -123,7 +127,7 @@ nav {
   text-transform: uppercase;
   text-align: center;
 }
-.promo .promo_descr {
+.promo_descr {
   margin-top: 23px;
   font-size: 18px;
   line-height: 24px;
@@ -131,7 +135,7 @@ nav {
   color: #fff;
   text-align: center;
 }
-.promo .promo_btn {
+.promo_btn {
   display: block;
   margin: 118px auto 0 auto;
   width: 259px;
@@ -146,6 +150,10 @@ nav {
   border-radius: 4px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+}
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1EACC7;
 }
 
 .label {
@@ -185,7 +193,7 @@ nav {
   padding-top: 20px;
   padding-bottom: 64px;
 }
-.advantages .advantages_card {
+.advantages_card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,7 +206,7 @@ nav {
   height: 161px;
   padding: 0 13px 0 33px;
 }
-.advantages .advantages_img_wrapper {
+.advantages_img_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,16 +221,16 @@ nav {
   background-color: #1EACC7;
   border-radius: 100%;
 }
-.advantages .advantages_content {
+.advantages_content {
   max-width: 371px;
 }
-.advantages .advantages_card_header {
+.advantages_card_header {
   font-size: 17px;
   line-height: 21px;
   font-weight: 400;
   color: #1EACC7;
 }
-.advantages .advantages_card_descr {
+.advantages_card_descr {
   margin: 0;
   font-size: 15px;
   line-height: 21px;
@@ -303,6 +311,29 @@ nav {
   border-radius: 100%;
   cursor: pointer;
 }
+.mobile_item_plus:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1EACC7;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.mobile_item_plus:after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1EACC7;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.mobile_item_plus:hover:before, .mobile_item_plus:hover::after {
+  background-color: #FF5656;
+}
 
 .car {
   position: relative;
@@ -340,4 +371,57 @@ nav {
   font-weight: 300;
   color: #222;
   text-align: center;
+}
+
+.require {
+  padding: 68px 0 85px 0;
+}
+.require_block {
+  margin: 33px 0;
+}
+.require_block_nmb {
+  margin-bottom: 0;
+}
+.require_title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1ca8c3;
+}
+.require_list {
+  margin-top: 22px;
+  padding-left: 50px;
+  list-style: none;
+}
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #222;
+}
+.require_list li:not(:last-child) {
+  margin-bottom: 5px;
+}
+.require_list li::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 2px;
+  display: block;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue_icon.svg") center center/cover no-repeat;
+}
+.require_descr {
+  margin-top: 25px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #1ca8c3;
+}
+.require .warning .require_title {
+  color: #FF5656;
+}
+.require .warning .require_list li:before {
+  background: url("../icons/check_red_icon.svg") center center/cover no-repeat;
 }/*# sourceMappingURL=style.css.map */
