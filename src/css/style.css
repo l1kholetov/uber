@@ -57,7 +57,7 @@ nav {
 }
 .subheader_link {
   display: block;
-  max-width: 100%;
+  max-width: 285px;
   margin-top: 16px;
 }
 .subheader_link img {
@@ -901,9 +901,22 @@ footer a:hover {
     margin-top: 72px;
     width: 210px;
     height: 50px;
+    font-size: 16px;
+  }
+  .promo_btn_hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4ce2ff));
+    background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%);
   }
   .menu {
     width: 85%;
+  }
+  .menu_item {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+  .menu_link {
+    display: block;
   }
   .reasons {
     padding: 22px 0 36px 0;
